@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBDC0E8F18DB603400B470D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDC0E8E18DB603400B470D6 /* Foundation.framework */; };
+		DBDC0E9118DB603400B470D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDC0E9018DB603400B470D6 /* CoreGraphics.framework */; };
+		DBDC0E9318DB603400B470D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDC0E9218DB603400B470D6 /* UIKit.framework */; };
+		DBDC0E9918DB603400B470D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBDC0E9718DB603400B470D6 /* InfoPlist.strings */; };
+		DBDC0E9B18DB603400B470D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0E9A18DB603400B470D6 /* main.m */; };
+		DBDC0E9F18DB603500B470D6 /* GRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0E9E18DB603500B470D6 /* GRKAppDelegate.m */; };
+		DBDC0EA218DB603500B470D6 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDC0EA018DB603500B470D6 /* Main_iPhone.storyboard */; };
+		DBDC0EA518DB603500B470D6 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDC0EA318DB603500B470D6 /* Main_iPad.storyboard */; };
+		DBDC0EA818DB603500B470D6 /* GRKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0EA718DB603500B470D6 /* GRKViewController.m */; };
+		DBDC0EAA18DB603500B470D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDC0EA918DB603500B470D6 /* Images.xcassets */; };
+		DBDC0EB118DB603500B470D6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDC0EB018DB603500B470D6 /* XCTest.framework */; };
+		DBDC0EB218DB603500B470D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDC0E8E18DB603400B470D6 /* Foundation.framework */; };
+		DBDC0EB318DB603500B470D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDC0E9218DB603400B470D6 /* UIKit.framework */; };
+		DBDC0EBB18DB603500B470D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBDC0EB918DB603500B470D6 /* InfoPlist.strings */; };
+		DBDC0EBD18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0EBC18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.m */; };
+		DBDC0EC918DB606200B470D6 /* GRKContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0EC818DB606200B470D6 /* GRKContainerViewController.m */; };
+		DBDC0ECA18DB606200B470D6 /* GRKContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0EC818DB606200B470D6 /* GRKContainerViewController.m */; };
+		DBDC0ECD18DB6A8A00B470D6 /* GRKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0ECC18DB6A8A00B470D6 /* GRKFirstViewController.m */; };
+		DBDC0ECE18DB6A8A00B470D6 /* GRKFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0ECC18DB6A8A00B470D6 /* GRKFirstViewController.m */; };
+		DBDC0ED118DB6A9800B470D6 /* GRKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0ED018DB6A9800B470D6 /* GRKSecondViewController.m */; };
+		DBDC0ED218DB6A9800B470D6 /* GRKSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0ED018DB6A9800B470D6 /* GRKSecondViewController.m */; };
+		DBDC0ED518DB6AA300B470D6 /* GRKThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0ED418DB6AA300B470D6 /* GRKThirdViewController.m */; };
+		DBDC0ED618DB6AA300B470D6 /* GRKThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDC0ED418DB6AA300B470D6 /* GRKThirdViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBDC0EB418DB603500B470D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBDC0E8318DB603400B470D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBDC0E8A18DB603400B470D6;
+			remoteInfo = GRKContainerViewControllerTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBDC0E8B18DB603400B470D6 /* GRKContainerViewControllerTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRKContainerViewControllerTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBDC0E8E18DB603400B470D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBDC0E9018DB603400B470D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBDC0E9218DB603400B470D6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBDC0E9618DB603400B470D6 /* GRKContainerViewControllerTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRKContainerViewControllerTestApp-Info.plist"; sourceTree = "<group>"; };
+		DBDC0E9818DB603400B470D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBDC0E9A18DB603400B470D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBDC0E9C18DB603500B470D6 /* GRKContainerViewControllerTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRKContainerViewControllerTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		DBDC0E9D18DB603500B470D6 /* GRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRKAppDelegate.h; sourceTree = "<group>"; };
+		DBDC0E9E18DB603500B470D6 /* GRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKAppDelegate.m; sourceTree = "<group>"; };
+		DBDC0EA118DB603500B470D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DBDC0EA418DB603500B470D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		DBDC0EA618DB603500B470D6 /* GRKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRKViewController.h; sourceTree = "<group>"; };
+		DBDC0EA718DB603500B470D6 /* GRKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKViewController.m; sourceTree = "<group>"; };
+		DBDC0EA918DB603500B470D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DBDC0EAF18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRKContainerViewControllerTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBDC0EB018DB603500B470D6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DBDC0EB818DB603500B470D6 /* GRKContainerViewControllerTestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRKContainerViewControllerTestAppTests-Info.plist"; sourceTree = "<group>"; };
+		DBDC0EBA18DB603500B470D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBDC0EBC18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKContainerViewControllerTestAppTests.m; sourceTree = "<group>"; };
+		DBDC0EC718DB606200B470D6 /* GRKContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKContainerViewController.h; sourceTree = "<group>"; };
+		DBDC0EC818DB606200B470D6 /* GRKContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKContainerViewController.m; sourceTree = "<group>"; };
+		DBDC0ECB18DB6A8A00B470D6 /* GRKFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKFirstViewController.h; sourceTree = "<group>"; };
+		DBDC0ECC18DB6A8A00B470D6 /* GRKFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKFirstViewController.m; sourceTree = "<group>"; };
+		DBDC0ECF18DB6A9800B470D6 /* GRKSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKSecondViewController.h; sourceTree = "<group>"; };
+		DBDC0ED018DB6A9800B470D6 /* GRKSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKSecondViewController.m; sourceTree = "<group>"; };
+		DBDC0ED318DB6AA300B470D6 /* GRKThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKThirdViewController.h; sourceTree = "<group>"; };
+		DBDC0ED418DB6AA300B470D6 /* GRKThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKThirdViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBDC0E8818DB603400B470D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDC0E9118DB603400B470D6 /* CoreGraphics.framework in Frameworks */,
+				DBDC0E9318DB603400B470D6 /* UIKit.framework in Frameworks */,
+				DBDC0E8F18DB603400B470D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBDC0EAC18DB603500B470D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDC0EB118DB603500B470D6 /* XCTest.framework in Frameworks */,
+				DBDC0EB318DB603500B470D6 /* UIKit.framework in Frameworks */,
+				DBDC0EB218DB603500B470D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBDC0E8218DB603400B470D6 = {
+			isa = PBXGroup;
+			children = (
+				DBDC0EC618DB606200B470D6 /* GRKContainerViewController */,
+				DBDC0E9418DB603400B470D6 /* GRKContainerViewControllerTestApp */,
+				DBDC0EB618DB603500B470D6 /* GRKContainerViewControllerTestAppTests */,
+				DBDC0E8D18DB603400B470D6 /* Frameworks */,
+				DBDC0E8C18DB603400B470D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBDC0E8C18DB603400B470D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0E8B18DB603400B470D6 /* GRKContainerViewControllerTestApp.app */,
+				DBDC0EAF18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBDC0E8D18DB603400B470D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0E8E18DB603400B470D6 /* Foundation.framework */,
+				DBDC0E9018DB603400B470D6 /* CoreGraphics.framework */,
+				DBDC0E9218DB603400B470D6 /* UIKit.framework */,
+				DBDC0EB018DB603500B470D6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBDC0E9418DB603400B470D6 /* GRKContainerViewControllerTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0EA318DB603500B470D6 /* Main_iPad.storyboard */,
+				DBDC0EA018DB603500B470D6 /* Main_iPhone.storyboard */,
+				DBDC0E9D18DB603500B470D6 /* GRKAppDelegate.h */,
+				DBDC0E9E18DB603500B470D6 /* GRKAppDelegate.m */,
+				DBDC0ECB18DB6A8A00B470D6 /* GRKFirstViewController.h */,
+				DBDC0ECC18DB6A8A00B470D6 /* GRKFirstViewController.m */,
+				DBDC0ECF18DB6A9800B470D6 /* GRKSecondViewController.h */,
+				DBDC0ED018DB6A9800B470D6 /* GRKSecondViewController.m */,
+				DBDC0ED318DB6AA300B470D6 /* GRKThirdViewController.h */,
+				DBDC0ED418DB6AA300B470D6 /* GRKThirdViewController.m */,
+				DBDC0EA618DB603500B470D6 /* GRKViewController.h */,
+				DBDC0EA718DB603500B470D6 /* GRKViewController.m */,
+				DBDC0EA918DB603500B470D6 /* Images.xcassets */,
+				DBDC0E9518DB603400B470D6 /* Supporting Files */,
+			);
+			path = GRKContainerViewControllerTestApp;
+			sourceTree = "<group>";
+		};
+		DBDC0E9518DB603400B470D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0E9618DB603400B470D6 /* GRKContainerViewControllerTestApp-Info.plist */,
+				DBDC0E9718DB603400B470D6 /* InfoPlist.strings */,
+				DBDC0E9A18DB603400B470D6 /* main.m */,
+				DBDC0E9C18DB603500B470D6 /* GRKContainerViewControllerTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBDC0EB618DB603500B470D6 /* GRKContainerViewControllerTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0EBC18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.m */,
+				DBDC0EB718DB603500B470D6 /* Supporting Files */,
+			);
+			path = GRKContainerViewControllerTestAppTests;
+			sourceTree = "<group>";
+		};
+		DBDC0EB718DB603500B470D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0EB818DB603500B470D6 /* GRKContainerViewControllerTestAppTests-Info.plist */,
+				DBDC0EB918DB603500B470D6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBDC0EC618DB606200B470D6 /* GRKContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBDC0EC718DB606200B470D6 /* GRKContainerViewController.h */,
+				DBDC0EC818DB606200B470D6 /* GRKContainerViewController.m */,
+			);
+			name = GRKContainerViewController;
+			path = ../GRKContainerViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBDC0E8A18DB603400B470D6 /* GRKContainerViewControllerTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBDC0EC018DB603500B470D6 /* Build configuration list for PBXNativeTarget "GRKContainerViewControllerTestApp" */;
+			buildPhases = (
+				DBDC0E8718DB603400B470D6 /* Sources */,
+				DBDC0E8818DB603400B470D6 /* Frameworks */,
+				DBDC0E8918DB603400B470D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRKContainerViewControllerTestApp;
+			productName = GRKContainerViewControllerTestApp;
+			productReference = DBDC0E8B18DB603400B470D6 /* GRKContainerViewControllerTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBDC0EAE18DB603500B470D6 /* GRKContainerViewControllerTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBDC0EC318DB603500B470D6 /* Build configuration list for PBXNativeTarget "GRKContainerViewControllerTestAppTests" */;
+			buildPhases = (
+				DBDC0EAB18DB603500B470D6 /* Sources */,
+				DBDC0EAC18DB603500B470D6 /* Frameworks */,
+				DBDC0EAD18DB603500B470D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBDC0EB518DB603500B470D6 /* PBXTargetDependency */,
+			);
+			name = GRKContainerViewControllerTestAppTests;
+			productName = GRKContainerViewControllerTestAppTests;
+			productReference = DBDC0EAF18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBDC0E8318DB603400B470D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GRK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Levi Brown";
+				TargetAttributes = {
+					DBDC0EAE18DB603500B470D6 = {
+						TestTargetID = DBDC0E8A18DB603400B470D6;
+					};
+				};
+			};
+			buildConfigurationList = DBDC0E8618DB603400B470D6 /* Build configuration list for PBXProject "GRKContainerViewControllerTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBDC0E8218DB603400B470D6;
+			productRefGroup = DBDC0E8C18DB603400B470D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBDC0E8A18DB603400B470D6 /* GRKContainerViewControllerTestApp */,
+				DBDC0EAE18DB603500B470D6 /* GRKContainerViewControllerTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBDC0E8918DB603400B470D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDC0EA518DB603500B470D6 /* Main_iPad.storyboard in Resources */,
+				DBDC0EAA18DB603500B470D6 /* Images.xcassets in Resources */,
+				DBDC0EA218DB603500B470D6 /* Main_iPhone.storyboard in Resources */,
+				DBDC0E9918DB603400B470D6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBDC0EAD18DB603500B470D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDC0EBB18DB603500B470D6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBDC0E8718DB603400B470D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDC0EA818DB603500B470D6 /* GRKViewController.m in Sources */,
+				DBDC0EC918DB606200B470D6 /* GRKContainerViewController.m in Sources */,
+				DBDC0E9B18DB603400B470D6 /* main.m in Sources */,
+				DBDC0ED118DB6A9800B470D6 /* GRKSecondViewController.m in Sources */,
+				DBDC0ECD18DB6A8A00B470D6 /* GRKFirstViewController.m in Sources */,
+				DBDC0ED518DB6AA300B470D6 /* GRKThirdViewController.m in Sources */,
+				DBDC0E9F18DB603500B470D6 /* GRKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBDC0EAB18DB603500B470D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDC0ECE18DB6A8A00B470D6 /* GRKFirstViewController.m in Sources */,
+				DBDC0EBD18DB603500B470D6 /* GRKContainerViewControllerTestAppTests.m in Sources */,
+				DBDC0ECA18DB606200B470D6 /* GRKContainerViewController.m in Sources */,
+				DBDC0ED218DB6A9800B470D6 /* GRKSecondViewController.m in Sources */,
+				DBDC0ED618DB6AA300B470D6 /* GRKThirdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBDC0EB518DB603500B470D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBDC0E8A18DB603400B470D6 /* GRKContainerViewControllerTestApp */;
+			targetProxy = DBDC0EB418DB603500B470D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBDC0E9718DB603400B470D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBDC0E9818DB603400B470D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBDC0EA018DB603500B470D6 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBDC0EA118DB603500B470D6 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DBDC0EA318DB603500B470D6 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBDC0EA418DB603500B470D6 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DBDC0EB918DB603500B470D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBDC0EBA18DB603500B470D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBDC0EBE18DB603500B470D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBDC0EBF18DB603500B470D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBDC0EC118DB603500B470D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRKContainerViewControllerTestApp/GRKContainerViewControllerTestApp-Prefix.pch";
+				INFOPLIST_FILE = "GRKContainerViewControllerTestApp/GRKContainerViewControllerTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBDC0EC218DB603500B470D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRKContainerViewControllerTestApp/GRKContainerViewControllerTestApp-Prefix.pch";
+				INFOPLIST_FILE = "GRKContainerViewControllerTestApp/GRKContainerViewControllerTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DBDC0EC418DB603500B470D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GRKContainerViewControllerTestApp.app/GRKContainerViewControllerTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRKContainerViewControllerTestApp/GRKContainerViewControllerTestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GRKContainerViewControllerTestAppTests/GRKContainerViewControllerTestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DBDC0EC518DB603500B470D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GRKContainerViewControllerTestApp.app/GRKContainerViewControllerTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GRKContainerViewControllerTestApp/GRKContainerViewControllerTestApp-Prefix.pch";
+				INFOPLIST_FILE = "GRKContainerViewControllerTestAppTests/GRKContainerViewControllerTestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBDC0E8618DB603400B470D6 /* Build configuration list for PBXProject "GRKContainerViewControllerTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBDC0EBE18DB603500B470D6 /* Debug */,
+				DBDC0EBF18DB603500B470D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBDC0EC018DB603500B470D6 /* Build configuration list for PBXNativeTarget "GRKContainerViewControllerTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBDC0EC118DB603500B470D6 /* Debug */,
+				DBDC0EC218DB603500B470D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBDC0EC318DB603500B470D6 /* Build configuration list for PBXNativeTarget "GRKContainerViewControllerTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBDC0EC418DB603500B470D6 /* Debug */,
+				DBDC0EC518DB603500B470D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBDC0E8318DB603400B470D6 /* Project object */;
+}
