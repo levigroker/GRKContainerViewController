@@ -68,14 +68,18 @@ NSTimeInterval const kDefaultAnimationDuration = 0.5f;
     //We will use a simple cross fade animation, as indicated
     NSTimeInterval duration = animated ? self.transitionAnimationDuration : 0.0f;
     
-    //Set the new view controller's view to be transparent
-    viewController.view.alpha = 0.0f;
+    // We're fading out views, so make sure they're not invisible when we start.
+    self.viewController.view.alpha = 1.0f;
+    viewController.view.alpha = 1.0f;
     
     //Add the new view controller to the view and view controller hierarchies
     if (viewController)
     {
         [self addChildViewController:viewController];
+        
+        // Add the new view below the current view, and then fade out the current view.
         [self.view addSubview:viewController.view];
+        [self.view insertSubview:viewController.view belowSubview:self.viewController.view];
         [viewController didMoveToParentViewController:self];
 
         //Setup constraints to keep the new view pinned to our size.
@@ -85,22 +89,25 @@ NSTimeInterval const kDefaultAnimationDuration = 0.5f;
         [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[containedView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(containedView)]];
     }
     
+    // Hold onto the old controller, and set the new one.
+    UIViewController *oldViewController = self.viewController;
+    _viewController = viewController;
+    
     [UIView animateWithDuration:duration animations:^{
-        //Set the new view controller's view to be visible
-        viewController.view.alpha = 1.0f;
+        // Animate away the old controller view.
+        oldViewController.view.alpha = 0.0f;
     } completion:^(BOOL finished) {
-        //Remove the previous view controller from the view and view controller hierarchies
-        [self.viewController willMoveToParentViewController:nil];
-        [self.viewController.view removeFromSuperview];
-        [self.viewController removeFromParentViewController];
-
-        //Keep our new view controller
-        _viewController = viewController;
+        // Quick transitions can leave us trying to remove the view that has just been added. Only remove it if its not the same controller.
+        if (_viewController != oldViewController) {
+            [oldViewController willMoveToParentViewController:nil];
+            [oldViewController.view removeFromSuperview];
+            [oldViewController removeFromParentViewController];
+        }
         
         if (completion)
         {
             //Call the completion block with the new view controller
-            completion(self.viewController);
+            completion(viewController);
         }
     }];
 }
