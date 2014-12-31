@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, BodyContent) {
 
 - (IBAction)segmentSelected:(UISegmentedControl *)sender
 {
-    NSLog(@"Selected '%@' at index %d.", [sender titleForSegmentAtIndex:sender.selectedSegmentIndex], sender.selectedSegmentIndex);
+    NSLog(@"Selected '%@' at index %d.", [sender titleForSegmentAtIndex:sender.selectedSegmentIndex], (int)sender.selectedSegmentIndex);
     [self setBodyContentWithIndex:self.segmentedControl.selectedSegmentIndex animated:YES];
 }
 
@@ -67,7 +67,7 @@ typedef NS_ENUM(NSInteger, BodyContent) {
 
 - (void)setBodyContentWithIndex:(NSInteger)index animated:(BOOL)animated
 {
-    NSLog(@"Setting body index to %d", index);
+    NSLog(@"Setting body index to %d", (int)index);
     
     UIViewController *viewController = nil;
     
