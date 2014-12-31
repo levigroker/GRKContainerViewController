@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GRKContainerViewController"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "A simple container view controller used to easily swap contained controllers with optional animation."
   s.description  = <<-DESC
 		A container UIViewController providing the ability to easily transition from one contained view controller to another.
