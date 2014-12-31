@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, BodyContent) {
 @property (nonatomic,weak) IBOutlet UISegmentedControl *segmentedControl;
 
 - (IBAction)segmentSelected:(UISegmentedControl *)sender;
+- (IBAction)buttonAction:(UIButton *)sender;
 
 @end
 
@@ -63,6 +64,13 @@ typedef NS_ENUM(NSInteger, BodyContent) {
     [self setBodyContentWithIndex:self.segmentedControl.selectedSegmentIndex animated:YES];
 }
 
+- (IBAction)buttonAction:(UIButton *)sender
+{
+    NSLog(@"Selected '%@' with tag %d.", [sender titleColorForState:UIControlStateNormal], (int)sender.tag);
+    [self setBodyContentWithIndex:sender.tag animated:YES];
+    self.segmentedControl.selectedSegmentIndex = sender.tag;
+}
+
 #pragma mark - Body Content
 
 - (void)setBodyContentWithIndex:(NSInteger)index animated:(BOOL)animated
@@ -81,15 +89,23 @@ typedef NS_ENUM(NSInteger, BodyContent) {
             case BodyContentZero:
             default:
             {
-                //Assumes the view controller class name is the storyboard identifier
-                GRKFirstViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(GRKFirstViewController.class)];
+                static GRKFirstViewController *vc = nil;
+                if (!vc)
+                {
+                    //Assumes the view controller class name is the storyboard identifier
+                    vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(GRKFirstViewController.class)];
+                }
                 viewController = vc;
                 break;
             }
             case BodyContentOne:
             {
-                //Assumes the view controller class name is the storyboard identifier
-                GRKSecondViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(GRKSecondViewController.class)];
+                static GRKSecondViewController *vc = nil;
+                if (!vc)
+                {
+                    //Assumes the view controller class name is the storyboard identifier
+                    vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(GRKSecondViewController.class)];
+                }
                 viewController = vc;
                 break;
             }
