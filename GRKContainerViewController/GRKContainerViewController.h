@@ -26,12 +26,14 @@ extern NSTimeInterval const kDefaultAnimationDuration;
 /// @name GRKContainerViewController
 ///
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GRKContainerViewController : UIViewController
 
 /**
  *  The current view controller. Changes to this property will not be animated.
  */
-@property (nonatomic,strong) UIViewController *viewController;
+@property (nonatomic,strong,nullable) UIViewController *viewController;
 
 /**
  *  The animation duration to use for the transition animation (if applicable). Defaults to `kDefaultAnimationDuration`.
@@ -46,6 +48,8 @@ extern NSTimeInterval const kDefaultAnimationDuration;
  *  @param animated       If YES then a simple cross fade animation will be applied during the tranistion from the current view controller to the new view controller.
  *  @param completion     A block to be called once the new view controller is displayed (after any animations). This can be `nil`.
  */
-- (void)setViewController:(UIViewController *)viewController animated:(BOOL)animated completion:(void(^)(UIViewController *viewController))completion;
+- (void)setViewController:(UIViewController *)viewController animated:(BOOL)animated completion:(void(^_Nullable)(UIViewController *viewController))completion;
 
 @end
+
+NS_ASSUME_NONNULL_END
